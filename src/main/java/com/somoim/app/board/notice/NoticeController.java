@@ -59,6 +59,7 @@ public class NoticeController {
 	// 등록
 	@GetMapping("add")
 	public String setAdd()throws Exception{
+		System.out.println("test");
 		return "board/add";
 	}
 

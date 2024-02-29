@@ -32,6 +32,7 @@ public class MoimService {
 		result = moimDAO.moimHeadAdd(moimDTO);
 
 		String path = servletContext.getRealPath("/resources/upload/moim");
+
 		
 		if(file.isEmpty()) {
 			
@@ -43,7 +44,7 @@ public class MoimService {
 			
 			return result;
 		}
-		
+
 		String fileName = fileManager.fileSave(path, file);
 
 		MoimFileDTO moimFileDTO = new MoimFileDTO();

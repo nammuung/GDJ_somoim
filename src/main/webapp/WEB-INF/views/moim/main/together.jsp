@@ -67,6 +67,8 @@
                                 </div>
                                 <div class="content">
                                     <div class="top-content">
+
+
                                     	<div style="text-align: right;">
 	                                        <%-- <a href="javascript:void(0)" class="tag" data-meet-num="${ar.meetNum}" data-moim-num="${ar.moimNum}"><i class="lni lni-pencil update"></i></a> --%>
 	                                        
@@ -74,6 +76,7 @@
 		                                        <a href="javascript:void(0)" class="tag" data-meet-num="${ar.meetNum}" data-moim-num="${ar.moimNum}"><i class="lni lni-trash del" ></i></a>
 	                                        </c:if>
                                         </div>
+
                                         
                                         <h3 class="title">
                                             <a href="item-details.html">${dto.meetName}</a>

@@ -39,10 +39,8 @@ public class MeetController {
 		model.addAttribute("dto",moimDTO);
 	}
 	@PostMapping("add")
-	public String mainAdd(MeetDTO meetDTO, MultipartFile file, HttpSession session) throws Exception {
-		
-		MemberDTO memberDTO = (MemberDTO) session.getAttribute("member");
-		meetDTO.setMeetHead(memberDTO.getUserName());
+	public String mainAdd(MeetDTO meetDTO, MultipartFile file) throws Exception {
+
 		int result = meetService.add(meetDTO, file);
 		
 		String path = "redirect:./together?moimNum="+meetDTO.getMoimNum();

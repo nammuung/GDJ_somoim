@@ -50,8 +50,6 @@
 						id="boardWriter">
 						<input type="hidden" name="boardSecret" value="${DTO.boardSecret}"
 						id="boardSecret">
-						
-						boardSecret
 					<div class="mb-3 text-start">
 						<label for="title" class="form-label">Title</label> <input
 							type="text" class="form-control" id="title"

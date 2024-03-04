@@ -32,11 +32,7 @@ public class MoimReplyController {
 		MemberDTO memberDTO = (MemberDTO)session.getAttribute("member");
 		replyDTO.setUserName(memberDTO.getUserName());
 		replyDTO.setReplyWriter(memberDTO.getNickName());
-		
-		if( memberDTO.getProfile().getFileName() != null) {
-			
-			replyDTO.setReplyProfile(memberDTO.getProfile().getFileName());
-		}
+		replyDTO.setReplyProfile(memberDTO.getProfile().getFileName());
 		int result = replyService.add(replyDTO);
 		
 		//조회
